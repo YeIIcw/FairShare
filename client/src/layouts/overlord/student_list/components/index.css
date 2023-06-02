@@ -1,0 +1,209 @@
+html, body {
+    overflow-x: hidden;
+    background-color: #27282d;
+}
+
+::-webkit-scrollbar {
+    background-color: #27282d;
+    width: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.full--Page{
+    background-color: rgb(30, 31, 36);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: row;
+    color: white;
+    font-family: Bahnschrift;
+    width: 100%;
+    height: 100vh;
+}
+
+.title--Table{
+    margin: 0 auto;
+}
+
+.div--Table{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full--Table{
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: auto;
+    margin: 0 auto 50px;
+    height: 50vh;
+    display: inline-block;
+}
+
+.full--Table th, td {
+    padding: 8px 30px 8px 30px;
+}
+
+.full--Table thead th {
+    text-align: left;
+}
+
+.full--Table thead tr {
+    background-color: rgb(121, 122, 126);
+    border-radius: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.full--Table tbody tr {
+    border: solid;
+    border-color: rgb(154, 154, 154);
+    border-width: 0px 0px 1px 0px;
+    background-color: rgb(54, 56, 63);
+}
+
+.filter--Panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 1vh;
+}
+
+.filter--Panel div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.filter--Input {
+    font-family: Bahnschrift;
+    background-color: rgb(121, 122, 126);
+    border-radius: 8px;
+    border: 0;
+    padding: 8px;
+    width: 100%;
+    height: 4vh;
+    color: white;
+    box-shadow: 5px 5px #31343f;
+}
+
+.filter--Input:hover {
+    box-shadow: 0 0 10px rgb(210, 208, 204);
+}
+
+.addrow--Panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.addrow--Panel div{
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-input-placeholder {
+    color: white
+}
+
+.filter--Clear {
+    font-family: Bahnschrift;
+    color: white;
+    background-color: rgb(255, 168, 0);
+    border: 0;
+    border-radius: 8px;
+    padding: 8px;
+    width: 10vw;
+    height: 4vh;
+    box-shadow: 5px 5px #a5813c;
+}
+
+.filter--Clear:hover {
+    box-shadow: 0 0 10px rgb(255, 168, 0);
+    cursor: pointer;
+}
+
+.popup {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 5;
+}
+
+.popup--Content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 60vh;
+    margin: auto auto;
+    background-color: rgb(30, 31, 36);
+    align-items: center;
+    zoom: 1.5;
+    border-radius: 15px;
+    box-shadow: 5px 5px #31343f;
+    z-index: 5;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(38, 38, 38, 0.619);
+    z-index: 5;
+}
+
+.edit--Input {
+    margin-top: 25px;
+    width: 80%;
+}
+
+.edit--Title {
+    text-align: center;
+    font-size: 35px;
+    margin: 15px 15px;
+}
+
+.button--Table {
+    font-family: Bahnschrift;
+    color: white;
+    background-color: rgb(255, 168, 0);
+    border: 0;
+    border-radius: 5px;
+    padding: 3px 30px 3px 30px;
+    cursor: pointer;
+}
+
+.button--Table:hover {
+    box-shadow: 0 0 10px rgb(255, 168, 0);
+}
+
+.page--Title {
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    margin: -10px;
+}
+
+.content--Panel {
+    width: 100%;
+    margin: 25px;
+}
+
+/* Install fontawesome */
+/* https://fontawesome.com/docs/web/use-with/react/#contentHeader */
+

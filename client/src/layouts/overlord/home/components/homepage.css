@@ -1,0 +1,39 @@
+.full--Home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-image: url(./images/cautiontape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signin--Home{
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+    font-size: 3vh;
+    border-radius: 12px;
+    height: 7vh;
+    width: 15vw;
+    border: 0;
+    color: white;
+    background-color: rgb(19, 19, 19);
+    position: fixed;
+    bottom: 15vh;
+    cursor: pointer;
+}
+
+.signin--Home:hover{
+    box-shadow: 0 0 10px rgb(255, 180, 31);
+}

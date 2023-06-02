@@ -1,0 +1,30 @@
+export const SlideData = [
+    {
+        image:
+            'https://scontent.fyyz1-1.fna.fbcdn.net/v/t39.30808-6/277739911_397642535696319_5388213176165895253_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=j8FXAxIUxKIAX8yeeFp&_nc_ht=scontent.fyyz1-1.fna&oh=00_AfDlrk4HZzupkrTSwXhF23IuLmcB-f_06dgwtdG98RT17Q&oe=63977AD7'
+    },
+    {
+        image:
+            'https://scontent.fyyz1-1.fna.fbcdn.net/v/t39.30808-6/315474552_583766623750575_4248962363630988613_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=_zAy5dsAyJwAX9II4rV&_nc_ht=scontent.fyyz1-1.fna&oh=00_AfBWOmR9bVpIgC7Cpb5G0V30R54vvs-AS7okJHKfS11iyw&oe=6396075E'
+    },
+    {
+        image:
+            'https://pbs.twimg.com/media/FWbmf8hX0AEomv3?format=jpg&name=4096x4096'
+    },
+    {
+        image:
+            'https://i.ytimg.com/vi/O1PkeQduVKw/maxresdefault.jpg'
+    },
+    {
+        image:
+            'https://scontent.fyyz1-1.fna.fbcdn.net/v/t39.30808-6/313862079_572905544836683_6872298523083353127_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=8LEt4TYIjKwAX9QxPt8&tn=eQPdYP-gy38TlFwN&_nc_ht=scontent.fyyz1-1.fna&oh=00_AfA6kr2QjJeS_myEeee_FYMt1BRLK5WhhhIh1t5OQGYLxw&oe=6396DC32'
+    },
+    {
+        image:
+            'https://scontent.fyyz1-1.fna.fbcdn.net/v/t39.30808-6/313863223_572905598170011_755349113711018636_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QU3JjRA-YBoAX9hGWIc&_nc_ht=scontent.fyyz1-1.fna&oh=00_AfC_c_Kjxig6nk85mKW3LE4hFtLBfLbKaipOaUilrivo3g&oe=63966B73'
+    },
+    {
+        image:
+            'https://scontent.fyyz1-1.fna.fbcdn.net/v/t39.30808-6/266755508_1262216234242929_1414797809030553386_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=m1CGc6BpPKgAX9_VmBU&_nc_ht=scontent.fyyz1-1.fna&oh=00_AfDooD2W7TMfge8JjhyEh3VuQNeXnDfyetEuSQLwoUrgZA&oe=63966E96'
+    },
+]

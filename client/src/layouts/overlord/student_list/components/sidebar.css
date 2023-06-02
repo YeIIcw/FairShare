@@ -1,0 +1,176 @@
+.sidebar--Panel{
+    width: 0%;
+    height: 100vh;
+    padding: 0 20vw 0 0;
+    margin: 0 -20vw 0 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffca42;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 28px;
+    background-image: url(../images/caution-tape-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+}
+
+.sidebar--Panel.active{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/caution-tape-banner.jpg);
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    transform: translateX(0);
+}
+
+.sidebar--Toggle {
+    border: none;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    transform: translateX(100%);
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.sidebar--Profile {
+    width: 90%;
+    height: 10vh;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #161617;
+    position: absolute;
+    top: 17vh;
+}
+
+.profile--Picture {
+    border-radius: 100%;
+    border: 5px solid rgb(27, 27, 27);
+    width: 13vh;
+    height: 13vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar--ButtonPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 28vh;
+}
+
+.sidebar--InnerButtonPanel {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+
+.sidebar--Button {
+    background-color: #fdedc4;
+    border-radius: 5px;
+    border: 0px;
+    border-width: 0px 5px 0px 0px;
+    margin-top: 1vh;
+    padding: 1.5vh 30% 1.5vh 30%;
+    width: 90%;
+    font-family: Bahnschrift;
+    font-weight: bolder;
+    font-size: 2vh;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sidebar--Button:hover {
+    background-color: #ffefc7;
+    border-width: 0px 5px 0px 0px;
+    border-radius: 5px;
+    border-color: #ffd272;
+    box-shadow: 0 0 10px rgb(255, 168, 0);
+}
+
+
+.sidebar--SubButtonPanel {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    
+    /* transform: translateY(-100%); */
+    /* opacity: 0; */
+    /* transition: 1s all ease; */
+}
+
+/* .sidebar--SubButtonPanel.active {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    transform: translateY(0%);
+    opacity: 1;
+} */
+
+.sidebar--SubButtonPanel button{
+    background-color: #ffdc99;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 1vh;
+    padding: 1vh 30% 1vh 30%;
+    font-family: Bahnschrift;
+    font-weight: bolder;
+    font-size: 1vh;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.sidebar--SubButtonPanel button:hover{
+    background-color: #ffd37e;
+    border-width: 0px 5px 0px 0px;
+    border-radius: 5px; 
+    border-color: #ffd272;
+    box-shadow: 0 0 10px rgb(255 168 0);
+}
+
+.sidebar--Footer {
+    border-bottom-right-radius: 24px;
+    background-color: #161617;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+}
+
+.sidebar--Footer h3{
+    margin: 10px 0px 0px 15px;
+    font-style: italic;
+    color: #939393;
+}
+
+.sidebar--Footer h1{
+    font-size: 100%;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+.sidebar--Footer span{
+    margin: 0px 0px 0px 15px;
+    size: 50%;
+}
+
+.sidebar--Footer span:hover{
+    cursor: pointer;
+}
+
+/* Install fontawesome */
+/* https://fontawesome.com/docs/web/use-with/react/#contentHeader */
