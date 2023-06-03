@@ -4,13 +4,12 @@ import axios from 'axios';
 import "./components/index.css";
 import Table from "./components/Table.js";
 import Form from "./components/Form.js";
-import Sidebar from "./components/Sidebar.js"
 import PageLayout from "examples/LayoutContainers/PageLayout";
 import qs from 'qs';
 import Sidenav from "examples/Sidenav";
 
 
-function StudentList() {
+function FoodList() {
     const [dataTable, setDataTable] = useState([]); 
     const [classDataTable, setClassDataTable] = useState([]); 
     const [teamDataTable, setTeamDataTable] = useState([]); 
@@ -34,34 +33,33 @@ function StudentList() {
     }
 
     const column = [
-        {heading: 'First Name', value: 'fname'},
-        {heading: 'Last Name', value: 'lname'},
-        {heading: 'Grade', value: 'grade'},
-        {heading: 'Team', value: 'name'},
-        {heading: 'Class Day', value: 'day'},
-        {heading: 'Start Time', value: 'start_time'},
-        {heading: 'End time', value: 'end_time'},
-        {heading: 'Edit', value: 'n/a'},
-        {heading: 'Delete', value: 'n/a'},
+        {heading: 'Company', value: 'fname'},
+        {heading: 'Item', value: 'lname'},
+        {heading: 'Quantity', value: 'grade'},
+        {heading: 'Type', value: 'name'},
+        {heading: 'Date', value: 'day'},
+        {heading: 'From', value: 'start_time'},
+        {heading: 'To', value: 'end_time'},
+        {heading: 'Status', value: 'n/a'},
+        {heading: 'Request', value: 'n/a'},
     ]
 
-    // Sidebar: https://www.youtube.com/watch?v=yhLIEikdz7Y
-    // Make add row a popup/slide down DONE
-    // Make the values in the dropdown not show DONE
-    // Make the time am/pm or in 24 hours time DONE
-    // https://medium.com/swlh/how-to-make-a-side-navigation-bar-in-reactjs-c90747f3410c
+
 
     return (
         <PageLayout>
             <div className="full--Page">
-                <Sidebar/>
+                <a href="/profile"><button>Back</button></a>
+                {/* <Sidebar/> */}
                 <div id="content" className="content--Panel">
                     <Form getData={getData} classData={classDataTable} getClassData={getClassData} teamData={teamDataTable} getTeamData={getTeamData} requestAPI={"student-list"}/>
                     <Table data={dataTable} classData={classDataTable} teamData={teamDataTable} getData={getData} requestAPI={"student-list"} column={column} />
+                    
                 </div>
             </div>
+            
         </PageLayout>
     )
 }
 
-export default StudentList;
+export default FoodList;

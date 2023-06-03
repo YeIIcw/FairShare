@@ -2,16 +2,16 @@ import PageLayout from "examples/LayoutContainers/PageLayout";
 import React from "react";
 import axios from "axios";
 
-function SurplusForm(){
+function RequestForm(){
 
     function successful(){
-        alert("Item submitted successful!");
+        alert("Item requested successful!");
     }
 
     return(
         <PageLayout>
             <div>
-                <h1>SurplusForm</h1>
+                <h1>Request Form</h1>
                 <form action="/profile">
                 <p>
                     <label>Item</label><br/>
@@ -26,15 +26,11 @@ function SurplusForm(){
                     <input type="number" name="Quantity" required />
                 </p>
                 <p>
-                    <label>From</label><br/>
-                    <input type="text" name="From_place" requiredc />
-                </p>
-                <p>
-                    <label>To</label><br/>
+                    <label>Location</label><br/>
                     <input type="text" name="To_place" requiredc />
                 </p>
                 <p>
-                    <label>Date</label><br/>
+                    <label>Urgency</label><br/>
                     <input type="text" name="Date" requiredc />
                 </p>
                 <p>
@@ -45,4 +41,4 @@ function SurplusForm(){
         </PageLayout>
     )
 }
-export default SurplusForm;
+export default RequestForm;

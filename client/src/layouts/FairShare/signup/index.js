@@ -1,35 +1,41 @@
 import PageLayout from "examples/LayoutContainers/PageLayout";
 import React from "react";
 import axios from "axios";
+import Profile from "../profile";
+import HomePage from "../home";
+import { Route, Routes } from "react-router-dom";
 
 function Signup(){
+
+
+
     return(
         <PageLayout>
-            <h1>Signup</h1>
-            
-            <form action="process-signup.php" method="post" id="signup" novalidate>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name"></input>
-                </div>
-                
-                <div>
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email"></input>
-                </div>
-                
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password"></input>
-                </div>
-                
-                <div>
-                    <label for="password_confirmation">Repeat password</label>
-                    <input type="password" id="password_confirmation" name="password_confirmation"></input>
-                </div>
-                
-                <button>Sign up</button>
+            <div>
+                <h2>Join us</h2>
+                <h5>Create your personal account</h5>
+            <form action="/profile">
+                <p>
+                    <label>Username</label><br/>
+                    <input type="text" name="first_name" required />
+                </p>
+                <p>
+                    <label>Email address</label><br/>
+                    <input type="email" name="email" required />
+                </p>
+                <p>
+                    <label>Password</label><br/>
+                    <input type="password" name="password" requiredc />
+                </p>
+                <p>
+                    <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
+                </p>
+                <p>
+                    <button  type="submit">Register</button>
+                </p>
             </form>
+
+        </div>
                 
         </PageLayout>
     )

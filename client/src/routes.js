@@ -1,10 +1,13 @@
+import HomePage from "layouts/FairShare/home";
 import Login from "layouts/FairShare/login";
 import MapDisplay from "layouts/FairShare/mapdisplay";
 import Profile from "layouts/FairShare/profile";
+import RequestForm from "layouts/FairShare/requestform";
 import Signup from "layouts/FairShare/signup";
 import SurplusForm from "layouts/FairShare/surplusform";
 import Home from "layouts/overlord/home";
 import RMA from "layouts/overlord/RMA";
+import FoodList from "layouts/overlord/student_list";
 import StudentList from "layouts/overlord/student_list";
 import SignIn from "layouts/signin";
 
@@ -19,18 +22,18 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "StudentList",
-    key: "studentlist",
-    route: "/studentlist",
-    component: <StudentList/>,
+    name: "FoodList",
+    key: "foodlist",
+    route: "/foodlist",
+    component: <FoodList/>,
     noCollapse: true,
   },
   {
     type: "collapse",
     name: "Home",
     key: "home",
-    route: "/home",
-    component: <Home/>,
+    route: "/",
+    component: <HomePage/>,
     noCollapse: true,
   },
   {
@@ -79,6 +82,14 @@ const routes = [
     key: "rma",
     route: "/rma",
     component: <RMA/>,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "RequestForm",
+    key: "requestform",
+    route: "/requestform",
+    component: <RequestForm/>,
     noCollapse: true,
   }
 ];

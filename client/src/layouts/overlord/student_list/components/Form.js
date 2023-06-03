@@ -93,24 +93,24 @@ export default function Form({getData, classData, getClassData, teamData, getTea
 
     return (
         <div>
-            <h1 className="page--Title">▸ RECORDS ◂</h1>
+            <h1 className="page--Title">▸ Items ◂</h1>
             <div className="addrow--Panel">
                 <div>
-                    <h5>Add row</h5>
-                    <button className="filter--Clear" onClick={togglePopup}>Add row</button>
+                    <h5>Add Item</h5>
+                    <button className="filter--Clear" onClick={togglePopup}>Add Item</button>
                 </div>
             </div>
             {popup && (
                 <div className="popup">
                     <div className="overlay">
                         <div className="popup--Content">
-                            <h2 className="edit--Title">Add Row</h2>
+                            <h2 className="edit--Title">Add Item</h2>
                             <button className="filter--Clear edit--Input" onClick={togglePopup}> Close </button>
                             <input 
                                 type="text"
                                 value={requestFirstName}
                                 className="filter--Input edit--Input" 
-                                placeholder="Enter first name..."
+                                placeholder="Enter Item..."
                                 onChange={(e) => {
                                     setRequestFirstName(e.target.value)
                                 }}>
@@ -119,7 +119,7 @@ export default function Form({getData, classData, getClassData, teamData, getTea
                                 type="text"
                                 value={requestLastName}
                                 className="filter--Input edit--Input"  
-                                placeholder="Enter last name..."
+                                placeholder="Enter Quantity..."
                                 onChange={(e) => {
                                     setRequestLastName(e.target.value)
                                 }}>
@@ -128,7 +128,7 @@ export default function Form({getData, classData, getClassData, teamData, getTea
                                 console.log(e.target.value)
                                 setRequestClass(e.target.value.substring(0, 1))
                             }}>
-                                <option value="">Select class...</option>
+                                <option value="">Select Location...</option>
                                 {classOptions.map(data => (
                                     <option value={data}>
                                         {data[0].substring(data[0].indexOf(" ") + 1)}
@@ -139,7 +139,7 @@ export default function Form({getData, classData, getClassData, teamData, getTea
                                 console.log(e.target.value)
                                 setRequestTeam(e.target.value.substring(0, 1))
                             }}>
-                                <option value="">Select team...</option>
+                                <option value="">Select Deviler Location...</option>
                                 {teamOptions.map(data => (
                                     <option value={data}>
                                         {data[0].substring(data[0].indexOf(" ") + 1)}
@@ -150,7 +150,7 @@ export default function Form({getData, classData, getClassData, teamData, getTea
                                 console.log(e.target.value)
                                 setRequestGrade(e.target.value)
                             }}>
-                                <option value="">Select grade...</option>
+                                <option value="">Select Date...</option>
                                 {gradeOptions.map(data => (
                                     <option value={data}>
                                     {data}
@@ -185,7 +185,7 @@ export default function Form({getData, classData, getClassData, teamData, getTea
                                     sendData();
                                     togglePopup();
                                 }
-                            }}>Add row</button>
+                            }}>Submit</button>
                         </div>
                     </div>
                 </div>

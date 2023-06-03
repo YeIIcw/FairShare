@@ -118,7 +118,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
             {column.map((columnItem, index) => {
                if(columnItem.value === "n/a")
                {
-                  if(columnItem.heading === "Edit")
+                  if(columnItem.heading === "Status")
                   {
                      return <td><button className="button--Table" onClick={() => {
                         togglePopup();
@@ -129,9 +129,9 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                         setEditTeam(item.team_id);
                         setEditGrade(item.grade);
                         setEditHidden(item.hidden);
-                     }}>Edit</button></td>
+                     }}>Status</button></td>
                   }
-                  else if(columnItem.heading === "Delete")
+                  else if(columnItem.heading === "Request")
                   {
                      return <td><button className="button--Table" onClick={() => {
                         setEditID(item.student_id);
@@ -142,7 +142,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                         setEditGrade(item.grade);
                         setEditHidden(1);
                         editData();
-                     }}>Delete</button></td>
+                     }}>Request</button></td>
                   }   
                }
                if(columnItem.value === "start_time" || columnItem.value === "end_time")
@@ -172,31 +172,31 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
          {/* Filter panel and inputs for sorting */}
          <div className="filter--Panel">
             <div>
-               <h5>First Name</h5>
+               <h5>Company</h5>
                <input 
                   type="text" 
                   value={firstNameValue}
                   className="filter--Input" 
-                  placeholder="Enter first name..."
+                  placeholder="Enter Company..."
                   onChange={(e) => {
                      setFirstNameValue(e.target.value.toLowerCase());
                      }}>
                </input>
             </div>
             <div>
-               <h5>Last Name</h5>
+               <h5>Item</h5>
                <input 
                   type="text" 
                   value={lastNameValue}
                   className="filter--Input" 
-                  placeholder="Enter last name..."
+                  placeholder="Enter Item..."
                   onChange={(e) => {
                         setLastNameValue(e.target.value.toLowerCase());
                         }}>
                </input>
             </div>
             <div>
-               <h5>Grade</h5>
+               <h5>Quantity</h5>
                <select id="gradefilter" className="filter--Input" onChange={(e) => {
                   setGradeValue(e.target.value.toLowerCase());
                }}>
@@ -209,7 +209,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                </select>
             </div>
             <div>
-               <h5>Team</h5>
+               <h5>Type</h5>
                <select id="teamfilter" className="filter--Input" onChange={(e) => {
                   const splitPosition = data.indexOf(" ");
                   if(e.target.value.toLowerCase().substring(0, 7) === "no team")
@@ -232,7 +232,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                </select>
             </div>
             <div>
-               <h5>Program</h5>
+               <h5>Location</h5>
                <select id="programfilter" className="filter--Input" onChange={(e) => {
                   setProgramValue(e.target.value.toLowerCase());
                }}>
@@ -245,7 +245,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                </select>
             </div>  
             <div>
-               <h5>Class Day</h5>
+               <h5>Date</h5>
                <select id="classdayfilter" className="filter--Input" onChange={(e) => {
                   setClassDayValue(e.target.value.toLowerCase());
                }}>
@@ -253,19 +253,6 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
                   {classDayOptions.map(data => (
                      <option value={data}>
                         {data}
-                     </option>
-                  ))}
-               </select>
-            </div>
-            <div>
-               <h5>Class Time</h5>
-               <select id="classtimefilter" className="filter--Input" onChange={(e) => {
-                  setClassTimeValue(e.target.value.toLowerCase());
-               }}>
-                  <option value="">Select...</option>
-                  {classTimeOptions.map(data => (
-                     <option value={data}>
-                        {convertTime(data)}
                      </option>
                   ))}
                </select>
@@ -293,7 +280,7 @@ export default function Table({data, classData, teamData, getData, requestAPI, c
          {/* The table (student list) */}
          <div className="div--Table">
             <div>
-               <h1 className="title--Table">Student List</h1> 
+               <h1 className="title--Table">Item List</h1> 
                <table className="full--Table">
                   <thead>
                      <tr>
